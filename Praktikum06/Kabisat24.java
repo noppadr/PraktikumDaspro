@@ -8,9 +8,14 @@ public class Kabisat24 {
         System.out.print("Masukkan Tahun : ");
         tahun = input.nextInt();
 
-        if ((tahun %4 == 0) && (tahun %100 !=0) || (tahun %4 == 0) && (tahun %100 !=0)) {
-            System.out.println("Tahun Kabisat");
-        } else
+        if (tahun % 4 == 0 && tahun % 400 == 0) {
+            System.out.println("Tahun " + tahun + " tahun kabisat");
+        }
+        else if (tahun % 100 !=0) {
+            System.out.println("Tahun " + tahun + " bukan tahun kabisat");
+        }
+        else {
             System.out.println("Bukan Tahun Kabisat");
+        }
     }
 }
