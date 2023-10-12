@@ -5,19 +5,12 @@ public class Kabisat24 {
         Scanner input = new Scanner(System.in);
         int tahun;
 
-        System.out.println("Masukkan Tahun Kabisat: ");
+        System.out.print("Masukkan Tahun : ");
         tahun = input.nextInt();
 
-        if ((tahun %400) ==0 ){
-            System.out.print("Tahun Kabisat");
-        } else if ((tahun % 100) == 0) {
-            System.out.println("Bukan Tahun Kabisat");
-        } else if ((tahun %4) == 0) {
+        if ((tahun %4 == 0) && (tahun %100 !=0) || (tahun %4 == 0) && (tahun %100 !=0)) {
             System.out.println("Tahun Kabisat");
         } else
-        System.out.println("Bukan Tahun Kabisat");
-        }
-        }
-
-    
-
+            System.out.println("Bukan Tahun Kabisat");
+    }
+}
