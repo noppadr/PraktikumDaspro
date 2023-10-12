@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class Segitiga24 {
+public class Segitiga24_pertama {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner (System.in);
         int sudut1, sudut2, sudut3, totalSudut;
 
         System.out.print("Sudut 1 : ");
@@ -29,5 +29,3 @@ public class Segitiga24 {
             System.out.println("Bukan segitiga");
     }
 }
-
-    
