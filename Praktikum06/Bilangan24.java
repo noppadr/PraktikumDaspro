@@ -1,4 +1,4 @@
-import java.util.Scanner;
+    import java.util.Scanner;
 
 public class Bilangan24 {
     public static void main(String[] args) {
@@ -13,18 +13,7 @@ public class Bilangan24 {
         System.out.println("Masukkan bilangan 3 : ");
         bil3 = input.nextInt();
 
-        if (bil1 >= bil2) {
-            if (bil1 >= bil3) {
-                System.out.println("Bilangan terbesar: " + bil1);
-            } else {
-                System.out.println("Bilangan terbesar: " + bil2);
-            }
-        } else {
-            if (bil2 >= bil3) {
-                System.out.println("Bilangan terbesar: " + bil2);
-            } else {
-                System.out.println("Bilangan terbesar: " + bil3);
-            }
-        }
+        String result = (int bil1 >= bil2) (int bil1 >= bil3) ? "Bilangan terbesar: " + bil1 : "Bilangan terbesar: " + bil2;
+
     }
 }
