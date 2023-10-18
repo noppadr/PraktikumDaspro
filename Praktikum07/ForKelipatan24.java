@@ -4,6 +4,7 @@ public class ForKelipatan24 {
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
 
+        double rataRata;
         int bilangan, total, counter;
         total = 0;
         counter = 0;
@@ -19,5 +20,8 @@ public class ForKelipatan24 {
             }
         }
         System.out.printf("pada rentang 1-5 terdapat %d bilangan kelipatan %d dengan total %d", counter, bilangan, total);
+        System.out.println(" ");
+        rataRata = (double)  total / counter;
+        System.out.println("Rata-rata: " + rataRata);
     }
 }
