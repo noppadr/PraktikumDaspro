@@ -3,28 +3,29 @@ import java.util.Scanner;
 public class DoWhileCuti24 {
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
-        int jatahCuti, jumlahHari;
-        String konfirmasi;
-
-        System.out.print("Jatah cuti: ");
-        jatahCuti = input.nextInt();
-
+        int jatahCuti = 14;
+        int jumlahHariCuti;
+        String lanjut;
+        
         do {
-            System.out.print("Apakah Anda ingin mengambil cuti (y/t)");
-            konfirmasi = input.next();
+            System.out.println("Jatah cuti tersisa: " + jatahCuti + " hari");
+            System.out.print("Masukkan jumlah hari cuti yang ingin diambil: ");
+            jumlahHariCuti = input.nextInt();
 
-            if (konfirmasi.equalsIgnoreCase("y")) {
-                System.out.print("Jumlah hari: ");
-                jumlahHari = input.nextInt();
+            if (jumlahHariCuti > jatahCuti) {
+                System.out.println("jumlah hari cuti melebihi jatah yang tersisa. Mohon masukkan jumlah yang sesuai.");
+            } else {
+                jatahCuti -= jumlahHariCuti;
+                System.out.println("Sisa jatah cuti: " + jatahCuti + "hari");
 
-                if (jumlahHari <= jatahCuti) {
-                    jatahCuti-= jumlahHari;
-                    System.out.println("Sisa jatah cuti: " + jatahCuti);
-                } else {
-                    System.out.println("Sisa jatah cuti Anda tidak mencukupi");
+                System.out.print("Apakah Anda ingin mengambil cuti lagi? (y/t)");
+                lanjut = input.next();
+
+                if (!lanjut.equalsIgnoreCase("y")) {
                     break;
                 }
             }
-        } while (jatahCuti > 0);
+        } while (true);
+        System.out.println("Terimakasih anda telah mengambil cuti");
     }
 }
