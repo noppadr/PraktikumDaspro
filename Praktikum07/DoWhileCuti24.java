@@ -23,11 +23,10 @@ public class DoWhileCuti24 {
                 } else if (jatahCuti == 0){
                     break;
                 } else {
-                    System.out.println("Jatah cuti tidak tersedia, sisa jatah cuti anda tinggal " + jatahCuti);
+                    System.out.println("Sisa jatah cuti anda tidak mencukupi. Sisa jatah anda adalah: " + jatahCuti);
                 }
-            } else {
-                    break;
-                }
-            } while (jatahCuti>0);
-        } 
+            } 
+        } while (jatahCuti>0);
     }
+} 
+    
