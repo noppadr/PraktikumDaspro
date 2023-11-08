@@ -15,8 +15,10 @@ public class Bioskop24 {
         penonton[3][0] = "Gisel";
         penonton[3][1] = "Hana";
 
-        for (int i = 0; i < penonton.length; i++) {
-            System.out.println("panjang baris ke-" + (i+1) + ": " + penonton[i].length);
+        System.out.println(penonton.length);
+
+        for (String[] barisPenonton : penonton) {
+            System.out.println("Panjang baris: " + barisPenonton.length);
         }
         
     }
