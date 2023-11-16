@@ -4,23 +4,22 @@ public class tugasIndividu24 {
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
 
-        System.out.print("Masukkan nilai n (n > 2): ");
+        System.out.print("Masukkan nilai n: ");
         int n = input.nextInt();
 
-        if (n > 2) {
-            for (int i = 1; i <= n; i++) {
-                for (int j = 1; j <= n - i; j++) {
-                    System.out.print(" ");
-                }
-
-                for (int k = 1; k <= i; k++) {
-                    System.out.print(k);
-                }
-
-                System.out.println();
-            }
+        if (n % 2 == 0 || n <= 2) {
+            System.out.println("input tidak valid");
         } else {
-            System.out.println("Masukkan nilai n yang lebih besar dari 2");
+        }
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (i > 1 && i < n && j > 1 && j < n) {
+                    System.out.print("  ");
+                } else {
+                    System.out.print(n + " ");
+                }
+            }
+            System.out.println();
         }
     }
 }
