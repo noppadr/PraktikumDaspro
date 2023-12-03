@@ -8,6 +8,9 @@ public class Welcome2_24 {
             System.out.println("Selamat datang di Politeknik Negeri Malang, " + name);
         }
         public static void main(String[] args) {
-            displayWelcomeMessage(null);
+            displayWelcomeMessage("Ani");
+            displayWelcomeMessage("Budi");
+            displayWelcomeMessage("Cica");
+            displayWelcomeMessage("Dodi");
     }
 }
